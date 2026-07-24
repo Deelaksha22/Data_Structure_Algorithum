@@ -1,5 +1,5 @@
 {
-    "editor.defaultFormatter": "redhat.java",
-    "editor.tabCompletion": "on",
+    "editor.defaultFormatter": null,
+    "editor.tabCompletion": "off",
     "editor.acceptSuggestionOnEnter": "off"
 }
