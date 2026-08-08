@@ -1,18 +1,27 @@
-import java.util.*;
-public class Hashing{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+import java.util.HashSet;
+
+public class Hashing {
+    public static void main(String[] args) {
+
         int[] arr = {1, 2, 3, 1, 2};
-        for(int x: arr){
-            System.out.println(x);
+
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            set.add(arr[i]);
         }
-        HashMap<Integer,Integer> hash = new HashMap<>();
-        
-        for(int i = 0;i < arr.length;i++){
-            hash.put(arr[i],hash.getorDefault(arr[i],0)+1);
+
+        for (int x : set) {
+
+            int cnt = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+                if (x == arr[i]) {
+                    cnt++;
+                }
+            }
+
+            System.out.println(x + " occurs " + cnt + " times");
         }
-        System.out.println("Enter Num!!");
-        int num = sc.nextInt();
-        System.out.println("Frequency of "+ num +" is "+hash.getorDefault(num,0));
     }
 }
