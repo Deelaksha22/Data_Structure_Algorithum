@@ -6,12 +6,13 @@ public class Hashing{
         for(int x: arr){
             System.out.println(x);
         }
-        int[] hash = {0};
+        HashMap<Integer,Integer> hash = new HashMap<>();
+        
         for(int i = 0;i < arr.length;i++){
-            hash[arr[i]]+=1;
+            hash.put(arr[i],hash.getorDefault(arr[i],0)+1);
         }
         System.out.println("Enter Num!!");
         int num = sc.nextInt();
-        System.out.println(hash[num]);
+        System.out.println("Frequency of "+ num +" is "+hash.getorDefault(num,0));
     }
 }
