@@ -5,7 +5,7 @@ public class SelectionSort {
         int i, j, min, temp;
         for(i=0;i<a.length -1;i++){
             min = i;
-            for(j = i;j < a.length;j++){
+            for(j = i+1;j < a.length;j++){
                 if(a[j] < a[min])
                     min = j;
             }
