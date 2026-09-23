@@ -1,4 +1,3 @@
-import java.util.*;
 public class SelectionSort {
     public static void main(String[] args){
         int [] a = {10,8,2,50,20};
