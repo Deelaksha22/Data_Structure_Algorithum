@@ -2,6 +2,7 @@ public class RotateArrayByK {
     public static void  main(String[] args){
         int []  nums  =  {1,2,3,4,5,6,7};
         int d = 3;
+        //BRUTEFORCE APPROACH
         int []temp = new int[d];
         for(int i=0;i<d;i++){
             temp[i] = nums[i];
@@ -15,7 +16,8 @@ public class RotateArrayByK {
             j++;
         }
         for(int x:nums){
-            System.out.print(x+" ");
+        System.out.print(x+" ");
         }
+
     }
 }
